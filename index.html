@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<h2> Elect/Elect TimeTable</h2>
+<style>
+	.th{
+		width:"100";
+        height:"50";
+    }
+    background-color: "blue";
+</style>
+<body>
+    <!-- Compressed CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+
+<!-- Compressed JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+	<table class="table-stack.hover" id="app">
+		<thead>
+			<tr>
+				<th width="300">Day</th>
+				<th width="300">Time</th>
+				<th width="300">Course</th>
+				<th width="300">Link</th>
+				<th width="500">Note</th>
+			</tr>
+		</thead>
+	<tbody>
+ 	<tr v-for='day in dayone'>
+
+ 			<td>{{day.class}}</td>
+			 <td >{{day.time}}</td>
+               <td >{{day.course}}</td>
+			 <td><a v-bind:href= "day.link">{{day.link}}</a></td>
+			    <td>{{day.note}}</td>
+</tr>
+    <tr v-for='day in daytwo'>
+
+            <td>{{day.class}}</td>
+             <td >{{day.time}}</td>
+               <td >{{day.course}}</td>
+             <td><a v-bind:href= "day.link">{{day.link}}</a></td>
+                <td>{{day.note}}</td>
+</tr>
+  <tr v-for='day in daythree'>
+
+            <td>{{day.class}}</td>
+             <td >{{day.time}}</td>
+               <td >{{day.course}}</td>
+             <td><a v-bind:href= "day.link">{{day.link}}</a></td>
+                <td>{{day.note}}</td>
+</tr>
+  <tr v-for='day in dayfour'>
+
+            <td>{{day.class}}</td>
+             <td >{{day.time}}</td>
+               <td >{{day.course}}</td>
+             <td><a v-bind:href= "day.link">{{day.link}}</a></td>
+                <td>{{day.note}}</td>
+</tr>
+  <tr v-for='day in dayfive'>
+
+            <td>{{day.class}}</td>
+             <td >{{day.time}}</td>
+               <td >{{day.course}}</td>
+             <td><a v-bind:href= "day.link">{{day.link}}</a></td>
+                <td>{{day.note}}</td>
+</tr>
+</tbody>
+</table>
+<script>
+var app = new Vue({
+  el: '#app',
+  data: { 
+    dayone: [{
+    	class:"Monday",
+    	course:'Mat 341',
+    	time:"8:000am-9:00am",
+    	link:'https://zoom.us/j/91064204776?pwd=dXRncE5LT0NWbndBWDVUSWhzRGZoZz09',
+    	note:"Join Class Early and passcode:797265",
+    	text:"Use the slides to study"},
+        
+    	{
+    	course:'Tel 331',
+    	time:"11:00am-12:00am",
+    	link:'https://meet.google.com/ddi-hvjs-dkp',
+    	note:"Attendance should be taken on lms from 12:00am -12:10am"}],
+  daytwo: [{
+    	class:"Tuesday",
+        course:'Mat 341',
+        time:"9:00am-10:00am",
+        link:'https://zoom.us/j/91503552226?pwd=cjgralJNZVhOK3pPNHR2a1gwVFR0dz09'},
+    	{
+    	course:'Tel 332',
+    	time:"10:00am-11:00am",
+    	link:'https://meet.google.com/gbs-ajhx-hnn'},
+    	{
+    	course:'Tel 333',
+    	time:"11:00am-12:00pm",
+    	link:'http://meet.google.com/zyw-zprj-rcq',
+    	note:"Note:Attendance is super important"},
+        {
+        course:'Mat 351',
+        time:"1:00pm-2:00pm",
+        link:'https://zoom.us/j/97712306577?pwd=K1RtTFVTRm9pcTZONlNsbVFDZ2Y5UT09',
+        note:"Note:Attendance is super important"}],
+
+         daythree: [{
+        class:"Wednesday",
+        course:'Mat 351',
+        time:"12:000pm-1:00pm",
+        link:'https://zoom.us/j/94939006658?pwd=ZVZTYjd0YlRucEdkNHdiYzJPaHJndz09',
+        note:"Can join class late",
+        text:"Use the slides to study"},
+        {
+            course:'TPE 316',
+        time:"12:000pm-2:00pm",
+        link:'http://meet.google.com/erm-cznk-yvp',
+        note:"Join Class Early"
+        }],
+         dayfour: [{
+        class:"Thursday",
+        course:'Mat 351',
+        time:"12:000pm-1:00pm",
+        link:'https://zoom.us/j/97712306577?pwd=K1RtTFVTRm9pcTZONlNsbVFDZ2Y5UT09',
+        note:"Join Class Early",
+        text:"Use the slides to study"}],
+          dayfive: [{
+        class:"Friday",
+        course:'Freedom',
+        time:"We pray till the end",
+        link:'home',
+        note:"hope it lasts"}],
+
+  }
+  }
+)
+</script>
+</body>
+</html>
