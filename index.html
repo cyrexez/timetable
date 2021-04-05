@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
-	<title>Electrical/Electronics Timetable</title>
-<h2> Elect/Elect TimeTable</h2>
+<head>
+<title> Elect/Elect TimeTable</title>
+</head>
+<h1 style="background-color:DodgerBlue;"> Elect/Elect 300L TimeTable</h1>
 <style>
+    h1 {text-align: center; }
 	.th{
 		width:"100";
         height:"50";
     }
-    background-color: "blue";
 </style>
 <body>
     <!-- Compressed CSS -->
@@ -17,9 +19,9 @@
 <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 
-	<table class="table-stack.hover" id="app">
+	<table style="background-color:DodgerBlue;" class="hover" id="app">
 		<thead>
-			<tr>
+			<tr style="background-color:DodgerBlue;">
 				<th width="300">Day</th>
 				<th width="300">Time</th>
 				<th width="300">Course</th>
@@ -84,7 +86,7 @@ var app = new Vue({
         
     	{
     	course:'Tel 331',
-    	time:"11:00am-12:00am",
+    	time:"11:00am-1:00pm",
     	link:'https://meet.google.com/ddi-hvjs-dkp',
     	note:"Attendance should be taken on lms from 12:00am -12:10am"}],
   daytwo: [{
@@ -98,35 +100,52 @@ var app = new Vue({
     	link:'https://meet.google.com/gbs-ajhx-hnn'},
     	{
     	course:'Tel 333',
-    	time:"11:00am-12:00pm",
+    	time:"11:00am-1:00pm",
     	link:'http://meet.google.com/zyw-zprj-rcq',
-    	note:"Note:Attendance is super important"},
+    	note:"Attendance should be taken on lms from 12:00pm -12:10pm"},
         {
         course:'Mat 351',
         time:"1:00pm-2:00pm",
         link:'https://zoom.us/j/97712306577?pwd=K1RtTFVTRm9pcTZONlNsbVFDZ2Y5UT09',
-        note:"Note:Attendance is super important"}],
+        note:"Note:Attendance is super important"},
+         {
+        course:'Tel 334',
+        time:"2:00pm-3:00pm",
+        link:'https://zoom.us/j/96808051501?pwd=TVFQUlpzV3l3N1JURVJqVkl4dVlMdz09',
+        note:"Note:Attendance is super important"},
+        {
+        course:'Tel 331',
+        time:"3:00pm-4:00pm",
+        link:'https://meet.google.com/ddi-hvjs-dkp',
+        note:"Attendance should be taken on lms from 12:00am -12:10am"}],
 
          daythree: [{
         class:"Wednesday",
         course:'Mat 351',
-        time:"12:000pm-1:00pm",
+        time:"12:00pm-1:00pm",
         link:'https://zoom.us/j/94939006658?pwd=ZVZTYjd0YlRucEdkNHdiYzJPaHJndz09',
         note:"Can join class late",
         text:"Use the slides to study"},
         {
-            course:'TPE 316',
-        time:"12:000pm-2:00pm",
-        link:'http://meet.google.com/erm-cznk-yvp',
-        note:"Join Class Early"
-        }],
+        course:'Tel 331',
+        time:"1:00pm-2:00pm",
+        link:'https://meet.google.com/ddi-hvjs-dkp',
+        note:"Attendance should be taken on lms from 12:00am -12:10am"},
+      ],
          dayfour: [{
         class:"Thursday",
-        course:'Mat 351',
-        time:"12:000pm-1:00pm",
-        link:'https://zoom.us/j/97712306577?pwd=K1RtTFVTRm9pcTZONlNsbVFDZ2Y5UT09',
+        course:'Tel 334',
+        time:"10:000am-11:00am",
+        link:'https://zoom.us/j/96808051501?pwd=TVFQUlpzV3l3N1JURVJqVkl4dVlMdz09',
         note:"Join Class Early",
-        text:"Use the slides to study"}],
+        text:"Use the slides to study"},
+          {
+            course:'Tpe 316',
+        time:"1:00pm-2:00pm",
+        link:'http://meet.google.com/erm-cznk-yvp',
+        note:"Join Class Early"
+        }
+        ],
           dayfive: [{
         class:"Friday",
         course:'Freedom',
